@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Caring</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color:#8b939a;
+      color: white;
+    }
+
+    video {
+      margin-top: -20px;
+    }
+
+    canvas {
+      position: absolute;
+    }
+
+    #leave {
+      margin-left: 300px;
+    }
+
+    #leave:hover {
+      background-image:none;
+      background-color:red;
+    }
+    
+    .inline-block-child {
+      display: inline-block;
+    }
+    .parent {
+      margin-left: 100px;
+    }
+
+    #firstP {
+      margin-left: 130px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="show">
+    <h6 id="firstP">Please bear with us for atleast 30 sec for better analysis.</h6>
+    <div class="parent">
+      <button class="btn btn-success talk inline-block-child">Talk</button>
+      <p class="inline-block-child">You can talk to our assistant. Start with Hello for details.</p>
+      <p class="content"></p>
+    </div>
+    
+    <video id="video" width="720" height="560" autoplay muted></video>
+  <div>
+    <!-- <button class="btn btn-danger" onclick="welcome()"> Welcome to our website </button>  -->
+    <div class="form-group">
+      <button type="button" class="btn btn-dark btn-lg" id="leave" >Leave Meeting</button> 
+    </div>
+  </div>
+  <div style="display:none;">
+      <p id="Email" ><%=email%></p>
+      <p id="Password" ><%=password%></p>
+      <p id="First" ><%=first_name%></p>
+      <p id="Last" ><%=last_name%></p>
+      <p id="Account" ><%=account_id%></p>
+      <p id="Status" ><%=status%></p>
+    </div>
+  </div>
+  <script defer src="face-api.min.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="app.js"></script>
+</body>
+</html>
