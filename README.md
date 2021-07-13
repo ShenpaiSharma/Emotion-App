@@ -11,10 +11,9 @@ Voice Recognition: Press ‘Talk’ to interact with voice recognition. (Note: C
 # Dashboard: 
 
 Sign In with the same email ID and password used in Face Detection App.
+
 Card and Pie Chart: It shows the average emotion data of the last day i.e, the last interaction with the Face detection it creates on average emotion of every second.
+
 Line Chart for Last Day emotion data: It shows the emotion of every second of the last day, i.e, the last interaction with the Face detection App. We can filter to create average upto the filter seconds which can reduce the clutter caused by large data consisting of every second emotion data.
+
 Line Chart for daily emotion data and valence score: Average Emotion data and Valence score of each day. It will average all the emotion data on a daily basis, and users can filter to see from which day to what day they wanna see their average emotion data.
-
-
-# IBY-API: 
-In my previous implementation of API, I have added a MongoDB database hosted on Atlas using AWS. Currently, I have deployed my API on Heroku.
