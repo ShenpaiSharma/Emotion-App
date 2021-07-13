@@ -100,7 +100,7 @@ if (Status === 'register') {
     .catch((err) => {
       // console.log("Errrrrror with register");
       console.log(err);
-      windows.location.href = "/failure";
+      window.location.href = "/failure";
     })
 } else if (Status === 'signin') {
 
@@ -134,7 +134,7 @@ if (Status === 'register') {
       window.location.href = "/failure";
     })
 } else {
-  windows.location.href = "/failure";
+  window.location.href = "/failure";
 }
 
 const expressions_arr = [];
@@ -143,7 +143,7 @@ const emotion_arr = [];
 let count = 0;
 
 function updateExpression(expressions_array) {
-  fetch('http://localhost:5050/update/expression', {
+  fetch('https://enigmatic-atoll-97792.herokuapp.com/update/expression', {
     method: 'put',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
@@ -154,12 +154,17 @@ function updateExpression(expressions_array) {
     })
   })
     .then(response => response.json())
-    .then(data => console.log(data));
-
-    stopStreamedVideo(video);
-    window.location.href = ('/success');
+    .then((data) => {
+      console.log(data);
+      stopStreamedVideo(video);
+      window.location.href = ('/success');
+    })
+    .catch((err) => {
+      console.log(err);
+      window.location.href = "/failure";
+    })
+    
 }
-
 
 video.addEventListener('play', () => {
   const canvas = faceapi.createCanvasFromMedia(video)
