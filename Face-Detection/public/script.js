@@ -143,7 +143,7 @@ const emotion_arr = [];
 let count = 0;
 
 function updateExpression(expressions_array) {
-  fetch('https://enigmatic-atoll-97792.herokuapp.com/update/expression', {
+  fetch('http://localhost:5050/update/expression', {
     method: 'put',
     headers: {'Content-Type': 'application/json'},
     body: JSON.stringify({
