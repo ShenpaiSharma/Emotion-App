@@ -88,7 +88,7 @@ const Dashboard = ({ user }) => {
 
 
       setChartPieData({
-        labels: ['Happy', 'Angry', 'Surprised', 'Sad', 'Disgust', 'Fear'],
+        labels: ['Happy', 'Angry', 'Sad', 'Surprised', 'Disgust', 'Fear'],
         datasets: [
           {
             label: "Last Day Average Emotion data",
