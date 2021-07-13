@@ -187,7 +187,7 @@ video.addEventListener('play', () => {
       facial_expressions = emotion_obj;
 
       count++;
-      // console.log(count);
+      console.log(count);
 
       if(count === 1) {
         start_time = new Date();
