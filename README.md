@@ -9,7 +9,6 @@ Voice Recognition: Press ‘Talk’ to interact with voice recognition. (Note: C
 
 
 # Dashboard: 
-
 Sign In with the same email ID and password used in Face Detection App.
 
 Card and Pie Chart: It shows the average emotion data of the last day i.e, the last interaction with the Face detection it creates on average emotion of every second.
