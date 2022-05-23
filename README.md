@@ -1,4 +1,4 @@
-# Caring-App
+# Emotion-App
 
 # Face-Detection-Application : 
 It uses face-api to generate emotion data. Register through this application and it will start detecting emotion data every second and the user can see analysed emotion data on its dashboard.
